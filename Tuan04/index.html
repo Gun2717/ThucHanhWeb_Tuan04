@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: flex;
+            justify-self: center;
+        }
+        #Menu-container {
+            display: flex;
+            justify-self: space-between;
+            width: 1440px;
+        }
+        #left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90px;
+            height: 870px;
+        }
+        #left01 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        #left02 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+        }
+        .item{
+            width: 32px;
+            margin-top:50px;
+        }
+        #setting{
+            margin-top:20px;
+        }* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        #Menu-container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        .cham_3_cham {
+            height: 28px;
+            align-items: center;
+            font-weight: 700;
+            color: grey;
+        }
+        #center {
+            border: 2px solid #EEE9E9;
+            padding-top: 42px;
+            width: 910px;
+        }
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        #setting {
+            margin-top: 36px;
+        }
+        .center_meeting {
+            padding-left: 40px;
+            padding-right: 40px;
+            display: flex;
+            justify-content: space-between;
+        }   
+        .meeting_body_2 {
+            display: flex;
+            width: 92px;
+            height: 38px;
+            border: 1px solid #DC143C;
+            border-radius: 40px;
+            justify-content: center;
+        }
+        .meeting_body_2_ro {
+            margin-top: 12px;
+            margin-right: 8px;
+            width: 10px;
+            height: 10px;
+            background-color: #DC143C;
+            border-radius: 50%;
+        }
+        .meeting_body_2_time {
+            color: #DC143C;
+            margin-top: 8px;
+        }
+        .center_time {
+            padding-top: 18px;
+            display: flex;
+            padding-left: 40px;
+            padding-bottom: 38px;
+        }
+        .center_time_conten {
+            margin-right: 20px;
+        }
+        .center_time_conten_all {
+            display: flex;
+            justify-content: center;
+            padding-top: 4px;
+            width: 80px;
+            height: 28px;
+            border-radius: 40px;
+            color: white;
+            background-color: #DC143C;
+        }
+        .center_time_conten_ip img {
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 4px;
+            width: 12px;
+            height: 12px;
+        }
+        .center_time_conten_all_2 {
+            display: flex;
+        }
+        .center_time_conten_L img {
+            margin-right: 8px;
+            margin-top: 4px;
+        }
+        .center_time_conten_2p {
+            padding-top: 4px;
+        }
+        .center_time_conten_ip p {
+            margin-top: 1px;
+            font-size: 14px;
+        }
+        .meeting_body_2 {
+            width: 90px;
+            height: 40px;
+        }
+        .img {
+            text-align: center;
+        }
+        .img_big_all_center {
+            position: relative;
+        }
+        .img_center {
+            position: absolute;
+            top: 12px;
+            width: 910px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 64px;
+            padding-right: 64px;
+        }
+        .img_content_ro {
+            width: 8px;
+            height: 8px;
+            background-color: springgreen;
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+        .img_content_all {
+            display: flex;
+            justify-content: space-around;
+            border-radius: 4px;
+            width: 160px;
+            height: 40px;
+            background-color: grey;
+            text-align: center;
+            color: whitesmoke;
+            padding: 11px 0px;
+        }
+        .img_3 {
+            margin-top: 24px;
+            padding: 0px 28px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .img_3_all {
+            position: relative;
+        }
+        .img_3_all_p {
+            position: absolute;
+            top: 10px;
+            left: 8px;
+            width: 112px;
+            height: 24px;
+            background-color: grey;
+            border-radius: 4px;
+
+        }
+        .img_3_all_p_full {
+            display: flex;
+            justify-content: space-between;
+            width: 246px;
+        }
+        .img_3_all_p_conten p {
+            padding-left: 12px;
+            padding-top: 4px;
+            color: white;
+            font-size: 13px;
+        }
+        .img33 {
+            width: 28px;
+            height: 28px;
+            border-radius: 4px;
+            background-color: oldlace;
+            text-align: center;
+            padding-top: 4px;
+        }
+        .img_7 {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 212px;
+
+        }
+        .img_7_7_conten {
+            width: 128px;
+            height: 42px;
+            border-radius: 4px;
+            color: white;
+            background-color: #DC143C;
+            text-align: center;
+            padding-top: 11px;
+            font-size: 18px;
+        }
+        .right_headandcenter {
+            padding-top: 42px;
+            border-bottom: 2px solid #EEE9E9;
+            padding-bottom: 32px;
+        }
+        #right {
+
+            width: 440px;
+
+        }
+        .right_head {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 30px;
+        }
+        .right_head_conten_hp {
+            width: 160px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .right_head_conten_hp p {
+            width: 20px;
+            border-radius: 50%;
+            background-color: bisque;
+            text-align: center;
+            padding-top: 4px;
+            color: #DC143C;
+        }
+        .right_head_conten_p {
+            width: 72px;
+            height: 36px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border: 1px solid #DC143C;
+            border-radius: 4px;
+            color: #DC143C;
+        }
+        .right_center {
+            margin-top: 32px;
+        }
+        .right_center_people {
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 30px;
+        }
+        .right_center_people_icon {
+            display: flex;
+            justify-content: space-around;
+        }
+        .right_center_people_icon_ip {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .right_center_people_icon_all {
+            display: flex;
+            width: 80px;
+            justify-content: space-around;
+        }
+        .right_center_people_icon_ip p {
+            margin-left: 10px;
+
+        }
+        .right_bottom_mess_icon {
+            width: 100px;
+            height: 56px;
+            text-align: center;
+            padding-top: 18px;
+        }
+        .right_bottom_mes {
+            background-color: #F5F5F5;
+            border-radius: 4px;
+            width: 100px;
+            margin-left: 80px;
+        }
+        .time_112 {
+            color: #9C9C9C;
+            font-size: 13px;
+        }
+        .right_bottom {
+            padding-top: 38px;
+
+        }
+        .right_bottom_chat {
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+        .right_bottom_ps {
+            display: inline-flex;
+            padding-left: 30px;
+            margin-top: 28px;
+        }
+        .right_bottom_mess {
+            margin-right: 0px;
+            width: 336px;
+            height: 66px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F5F5F5;
+            margin-left: 80px;
+            padding: 0px 18px;
+            border-radius: 4px;
+        }
+        .right_bottom_ps_in p {
+            text-align: center;
+            padding-top: 8px;
+            padding-left: 16px;
+
+        }
+        .right_bottom_ip {
+            display: flex;
+            justify-content: space-between;
+
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .right_bottom_ip_conten input {
+            height: 44px;
+            width: 326px;
+            border-radius: 4px;
+            background-color: #F5F5F5;
+            border: 1px solid #F5F5F5;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="Menu-container">
+            <div id="left">
+                <div id="left01">
+                    <img class="item" src="./image/logo.png" alt=""> 
+                    <img class="item" src="./image/left1.png" alt=""> 
+                    <img class="item" src="./image/left2.png" alt=""> 
+                    <img class="item" src="./image/left3.png" alt=""> 
+                    <img class="item" src="./image/left4.png" alt=""> 
+                    <img class="item" src="./image/left5.png" alt=""> 
+                </div>
+                <div id="left02">
+                    <img src="./image/left6.png" width="35" alt=""> 
+                    <img id="setting" src="./image/left7.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">
+                <div class="all_center">
+                    <div class="center_meeting">
+                        <div class="meeting_body">
+                            <h2>Meeting title</h2>
+                        </div>
+                        <div class="meeting_body_2">
+                            <div class="meeting_body_2_time">
+                                <p>12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center_time">
+                        <div class="center_time_conten">
+                            <div class="center_time_conten_all">
+                                <div class="center_time_conten_ip">
+                                    <img src="./image/left5.png" alt="">
+                                </div>
+                                <div class="center_time_conten_ip">
+                                    <p>Internal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center_time_conten">
+                            <div class="center_time_conten_all_2">
+                                <div class="center_time_conten_L">
+                                    <img src="./image/center2.png" alt="">
+                                </div>
+                                <div class="center_time_conten_L">
+                                    <p class="center_time_conten_2p">Sep 02, 2022 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center_time_conten">
+                            <p class="center_time_conten_2p">08:00 - 09:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img_big_all">
+                            <div class="img_big_all_center">
+                                <div class="img_center">
+                                    <div class="img_content">
+                                        <div class="img_content_all">
+                                            <div class="img_content_ro"></div>
+                                            <div class="img_content_p">
+                                                <p> Benjamin Crawford</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_content">
+                                        <img src="./image/mic_color.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img_big">
+                            <img src="./image/img_big.png" alt="">
+                        </div>
+                    </div>
+                    <div class="img_3">
+                        <div class="img_3_all">
+                            <div class="img_3_3"><img src="./image/img2.png" alt=""></div>
+                            <div class="img_3_all_p">
+                                <div class="img_3_all_p_full">
+                                    <div class="img_3_all_p_conten">
+                                        <p>Christian Scott</p>
+                                    </div>
+                                    <div class="img_3_all_p_conten">
+                                        <div class="img33">
+                                            <img src="./image/mic1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img_3_all">
+                            <div class="img_3_3"><img src="./image/img1.png" alt=""></div>
+                            <div class="img_3_all_p">
+                                <div class="img_3_all_p_full">
+                                    <div class="img_3_all_p_conten">
+                                        <p>Deborah Chu</p>
+                                    </div>
+                                    <div class="img_3_all_p_conten">
+                                        <div class="img33">
+                                            <img src="./image/mic2.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img_3_all">
+                            <div class="img_3_3"><img src="./image/img.png" alt=""></div>
+                            <div class="img_3_all_p">
+                                <div class="img_3_all_p_full">
+                                    <div class="img_3_all_p_conten">
+                                        <p>Joedan Nieves</p>
+                                    </div>
+                                    <div class="img_3_all_p_conten">
+                                        <div class="img33">
+                                            <img src="./image/mic1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_7">
+                        <div class="img_7_7"><img src="./image/mic_grey_color.png" alt=""></div>
+                        <div class="img_7_7"><img src="./image/cam_color.png" alt=""></div>
+                        <div class="img_7_7"><img src="./image/speaker_grey_color.png" alt=""></div>
+                        <div class="img_7_7 img_7_7_conten">
+                            <p>End meeting</p>
+                        </div>
+                        <div class="img_7_7"><img src="./image/Button 2179.png" alt=""></div>
+                        <div class="img_7_7"><img src="./image/share.png" alt=""></div>
+                        <div class="img_7_7"><img src="./image/3cham.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div class="right_headandcenter">
+                    <div class="right_head">
+                        <div class="right_head_conten">
+                            <div class="right_head_conten_hp">
+                                <h2>Participants</h2>
+                                <p>4</p>
+                            </div>
+                        </div>
+                        <div class="right_head_conten">
+                            <div class="right_head_conten_p">
+                                <p>Add</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_center">
+                        <div class="right_center_people">
+                            <div class="right_center_people_icon">
+                                <div class="right_center_people_icon_ip">
+                                    <img src="./image/avatar 1322.png" alt="">
+                                </div>
+                                <div class="right_center_people_icon_ip">
+                                    <p>Benjamin crawford</p>
+                                </div>
+                            </div>
+                            <div class="right_center_people_icon">
+                                <div class="right_center_people_icon_all">
+                                    <div class="right_center_prople_3_icon">
+                                        <img src="./image/mic1.png" alt="">
+                                    </div>
+                                    <div class="right_center_prople_3_icon">
+                                        <img src="./image/cam_small.png" alt="">
+                                    </div>
+                                    <div class="right_center_prople_3_icon">
+                                        <div class="cham_3_cham">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_center_people">
+                            <div class="right_center_people_icon">
+                                <div class="right_center_people_icon_ip">
+                                    <img src="./image/avatar 1323.png" alt="">
+                                </div>
+                                <div class="right_center_people_icon_ip">
+                                    <p>Christian Scott</p>
+                                </div>
+                            </div>
+                            <div class="right_center_people_icon">
+                                <div class="right_center_people_icon_all">
+                                    <div class="right_center_prople_3_icon">
+                                        <img src="./image/mic1.png" alt="">
+                                    </div>
+                                    <div class="right_center_prople_3_icon">
+                                        <img src="./image/cam_small.png" alt="">
+                                    </div>
+                                    <div class="right_center_prople_3_icon">
+                                        <div class="cham_3_cham">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_center_people">
+                            <div class="right_center_people_icon">
+                                <div class="right_center_people_icon_ip">
+                                    <img src="./image/avatar 1324.png" alt="">
+                                </div>
+                                <div class="right_center_people_icon_ip">
+                                    <p> Deborah Chu</p>
+                                </div>
+                            </div>
+                            <div class="right_center_people_icon">
+                                <div class="right_center_people_icon_all">
+                                    <div class="right_center_prople_3_icon">
+                                        <img src="./image/mic1.png" alt="">
+                                    </div>
+                                    <div class="right_center_prople_3_icon">
+                                        <img src="./image/cam_small.png" alt="">
+                                    </div>
+                                    <div class="right_center_prople_3_icon">
+                                        <div class="cham_3_cham">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_center_people">
+                            <div class="right_center_people_icon">
+                                <div class="right_center_people_icon_ip">
+                                    <img src="./image/avatar 1325.png" alt="">
+                                </div>
+                                <div class="right_center_people_icon_ip">
+                                    <p>Joedan Nieves</p>
+                                </div>
+                            </div>
+                            <div class="right_center_people_icon">
+                                <div class="right_center_people_icon_all">
+                                    <div class="right_center_prople_3_icon">
+                                        <img src="./image/mic1.png" alt="">
+                                    </div>
+                                    <div class="right_center_prople_3_icon">
+                                        <img src="./image/cam_small.png" alt="">
+                                    </div>
+                                    <div class="right_center_prople_3_icon">
+                                        <div class="cham_3_cham">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_bottom">
+                    <div class="right_bottom_chat">
+                        <h2>Chat</h2>
+                    </div>
+                    <div class="right_bottom_ps">
+                        <div class="right_bottom_ps_in"><img src="./image/avatar 1324.png" alt=""></div>
+                        <div class="right_bottom_ps_in">
+                            <p><b>Deborah Chu</b> </p>
+                        </div>
+                        <div class="right_bottom_ps_in">
+                            <p class="time_112">1:12 PM</p>
+                        </div>
+                    </div>
+                    <div class="right_bottom_mess">
+                        <p>Lorem excepteur magna voluptate exercitation
+                            dolore exercitation amet
+                        </p>
+                    </div>
+                    <div class="right_bottom_ps">
+                        <div class="right_bottom_ps_in"><img src="./image/avatar 1325.png" alt=""></div>
+                        <div class="right_bottom_ps_in">
+                            <p><b> Joedan Nieves</b></p>
+                        </div>
+                        <div class="right_bottom_ps_in">
+                            <p class="time_112">1:12 PM</p>
+                        </div>
+                    </div>
+                    <div class="right_bottom_mess">
+                        <p>Elusmod laborum culpa est magna cillum sint <br>
+                            in elit proident magna anim consecte
+                        </p>
+                    </div>
+                    <div class="right_bottom_ps">
+                        <div class="right_bottom_ps_in"><img src="./image/avatar 1322.png" alt=""></div>
+                        <div class="right_bottom_ps_in">
+                            <p><b>Benjamin crawford</b> </p>
+                        </div>
+                        <div class="right_bottom_ps_in">
+                            <p class="time_112">1:12 PM</p>
+                        </div>
+                    </div>
+                    <div class="right_bottom_mes">
+                        <div class="right_bottom_mess_icon">
+                            <p>🥰🥰🥰</p>
+                        </div>
+                    </div>
+                    <div class="right_bottom_ps">
+                        <div class="right_bottom_ps_in"><img src="./image/avatar 1323.png" alt=""></div>
+                        <div class="right_bottom_ps_in">
+                            <p><b>Christian Scott</b> </p>
+                        </div>
+                    </div>
+                    <div class="right_bottom_ip">
+                        <div class="right_bottom_ip_conten">
+                            <input type="text" placeholder="    Add...">
+                        </div>
+                        <div class="right_bottom_ip_conten">
+                            <img src="./image/send.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
